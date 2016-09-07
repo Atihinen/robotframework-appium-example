@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TodoExampleApp</string>
+    <!-- Todo activity -->
+    <string name="todo_title">Todo list</string>
+    <string name="add_btn_text">Add</string>
+    <string name="empty_todo">Todo cannot be empty</string>
+</resources>
