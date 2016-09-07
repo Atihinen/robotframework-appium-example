@@ -15,12 +15,15 @@ public class TodoPresenterImpl implements TodoPresenter {
     public TodoPresenterImpl(TodoView todoView){this.todoView = todoView;}
     @Override
     public void addTodo(String todoTxt) {
-        Log.d("**************** ", todoTxt);
-        if(todoTxt.isEmpty()){
-            todoView.addError();
+        try {
+            if (todoTxt.equals(null) || todoTxt.isEmpty()) {
+                todoView.addError();
+            } else {
+                todoView.addSuccess(todoTxt);
+            }
         }
-        else {
-            todoView.addSuccess(todoTxt);
+        catch (NullPointerException e){
+            todoView.addError();
         }
     }
 }
