@@ -1,1 +1,6 @@
 /build
+
+#Robot logs
+log.html
+report.html
+output.xml

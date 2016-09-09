@@ -60,6 +60,7 @@ public class TodoActivity extends AppCompatActivity implements TodoView {
         todos.add(content);
         //updateTodoAdapter();
         adapter.notifyDataSetChanged();
+        todoTxt.setText(null);
     }
 
     @Override
