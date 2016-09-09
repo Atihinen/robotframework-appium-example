@@ -10,7 +10,7 @@ ${ADD_TODO_BTN}=    id=fi.groupd9.todoexampleapp:id/addTodoBtn
 *** Keywords ***
 Start Application
     ${app_path}=    Set Variable    ${EXEC_DIR}/build/outputs/apk/app-debug.apk
-    Open Application    ${REMOTE_URL}    platformVersion=4.4.2    platformName=Android    deviceName=06a0d860d0ee0c66    app=${app_path}    appPackage=fi.groupd9.todoexampleapp
+    Open Application    ${REMOTE_URL}    platformVersion=${version}    platformName=Android    deviceName=${devicename}    app=${app_path}    appPackage=fi.groupd9.todoexampleapp
 
 *** Test Cases ***
 Todo edittext should be visible
