@@ -13,6 +13,9 @@
   "author": "Joonas Jauhiainen",
   "license": "MIT",
   "dependencies": {
-    "appium": "^1.5.3"
+    "appium": "^1.5.3",
+    "minimist": "^1.2.5",
+    "npm-update": "^2.1.0",
+    "yargs-parser": "^18.1.3"
   }
 }
